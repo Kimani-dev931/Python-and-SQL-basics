@@ -1,0 +1,15 @@
+import sqlite3
+conn=sqlite3.connect('emobilis.db')
+print("opened db successfully")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(1,'Harrison',24,'eMobilis')")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(2,'Mary',28,'Modcom')")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(3,'Samson',26,'eMobilis')")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(4,'Cynthia',25,'Moringa')")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(5,'Caroline',23,'eMobilis')")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(6,'Stacy',23,'eMobilis')")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(7,'Martin',21,'eMobilis')")
+conn.execute("INSERT INTO Students(ID,NAME,AGE,SCHOOL) VALUES(8,'Felix',27,'eMobilis')")
+#saving into database
+conn.commit()
+print("Records added successfully")
+conn.close()
